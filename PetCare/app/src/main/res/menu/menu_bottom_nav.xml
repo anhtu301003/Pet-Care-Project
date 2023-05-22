@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Home"
+        android:icon="@drawable/ic_home"
+        android:id="@+id/Activity_Home"/>
+
+    <item android:title="Community"
+
+        android:id="@+id/Activity_Community"/>
+
+    <item android:title=""
+        android:id="@+id/Place_holder"/>
+
+    <item android:title="Shop"
+        android:icon="@drawable/ic_shop"
+        android:id="@+id/Activity_Shop"/>
+
+    <item android:title="Chat"
+
+        android:id="@+id/Activity_Chat"/>
+</menu>
