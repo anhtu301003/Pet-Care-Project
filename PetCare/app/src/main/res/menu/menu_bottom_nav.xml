@@ -5,7 +5,7 @@
         android:id="@+id/Activity_Home"/>
 
     <item android:title="Community"
-
+        android:icon="@drawable/ic_community"
         android:id="@+id/Activity_Community"/>
 
     <item android:title=""
@@ -16,6 +16,6 @@
         android:id="@+id/Activity_Shop"/>
 
     <item android:title="Chat"
-
+        android:icon="@drawable/ic_chat"
         android:id="@+id/Activity_Chat"/>
 </menu>

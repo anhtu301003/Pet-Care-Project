@@ -34,6 +34,6 @@
         android:src="@drawable/ic_add"
         app:backgroundTint="@color/Primary_color"
         app:layout_anchor="@id/BottomAppbar"
-         />
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
