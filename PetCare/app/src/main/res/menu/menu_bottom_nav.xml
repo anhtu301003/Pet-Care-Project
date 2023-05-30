@@ -9,7 +9,8 @@
         android:id="@+id/Activity_Community"/>
 
     <item android:title=""
-        android:id="@+id/Place_holder"/>
+        android:id="@+id/Place_holder"
+        android:enabled="false"/>
 
     <item android:title="Shop"
         android:icon="@drawable/ic_shop"

@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_appbar"
+        android:id="@+id/fragment_container"/>
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:id="@+id/BottomAppbar"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_appbar"
         app:fabCradleMargin="10dp"
         app:fabCradleVerticalOffset="10dp"
-        app:fabCradleRoundedCornerRadius="10dp">
+        app:fabCradleRoundedCornerRadius="10dp"
+        tools:ignore="BottomAppBar">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/menu_bottom_nav"
-            android:id="@+id/BottomNav"
+            android:id="@+id/bottom_nav"
             app:itemIconTint="@color/color_bottom_nav"
             app:labelVisibilityMode="labeled"
             app:itemTextColor="@color/color_bottom_nav"
@@ -33,7 +40,10 @@
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add"
         app:backgroundTint="@color/Primary_color"
-        app:layout_anchor="@id/BottomAppbar"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_margin="16dp"
+        />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
